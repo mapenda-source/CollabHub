@@ -1,0 +1,14 @@
+spring:
+    datasource:
+      url: jdbc:postgresql://localhost:5432/collabhub
+      username: collabhub_user
+      password: MAP0404
+      driver-class-name: org.postgresql.Driver
+      hikari:
+        maximum-pool-size: 10
+        minimum-idle: 5
+        idle-timeout: 30000
+    jpa:
+      hibernate:
+        ddl-auto: update # Crée/mets à jour les tables automatiquement
+      show-sql: true # Affiche les requêtes SQL dans les logs
